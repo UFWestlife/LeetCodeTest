@@ -25,7 +25,7 @@ public class PascalsTriangle118 {
     }
 
     public static void main(String args[]){
-//        System.out.println(generate(5));
+        System.out.println(generate(5));
         System.out.println(Math.sqrt(28));
 
     }
