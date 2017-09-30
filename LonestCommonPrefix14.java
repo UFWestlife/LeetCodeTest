@@ -42,5 +42,7 @@ public class LonestCommonPrefix14 {
                 "abcrde", "abccde", "abcsde"
         };
         System.out.println(longestCommonPrefix(strs));
+
+        //is this dp method of lcs
     }
 }
