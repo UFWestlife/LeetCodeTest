@@ -26,14 +26,14 @@ public class BinaryTreeRightSideView199 {
         return ret;
     }
 
-    public List<Integer> rightSideView1(TreeNode root) {// recursive
+    public static List<Integer> rightSideView1(TreeNode root) {// recursive
         ArrayList list = new ArrayList();
         rightSideView(root, 0, list);
 
         return list;
     }
 
-    public void rightSideView(TreeNode root, int level, ArrayList list) {
+    public static void rightSideView(TreeNode root, int level, ArrayList list) {
         if(root == null) return;
 
         if(list.size() == level)
@@ -56,5 +56,6 @@ public class BinaryTreeRightSideView199 {
         node3.right = node5;
 
         System.out.println(rightSideView(node1));
+        System.out.println(rightSideView1(node1));
     }
 }
