@@ -38,7 +38,5 @@ public class reverseBits190 {
         }
         Arrays.sort(a);
         System.out.println(a);
-
-
     }
 }
