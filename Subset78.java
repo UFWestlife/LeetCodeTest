@@ -20,7 +20,7 @@ public class Subset78 {
     }
 
     public static void main(String args[]){
-        int[] a = {1,2,3};
-        subsets(a);
+        int[] a = {2, 3, 5, 9};
+        System.out.println(subsets(a));
     }
 }
