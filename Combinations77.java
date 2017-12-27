@@ -13,11 +13,11 @@ public class Combinations77 {
         return list;
     }
 
-    private static void search(List<List<Integer>> list, int[] nums, List<Integer> temp, int m, int n){
+    private static void search(List<List<Integer>> list, int[] nums, List<Integer> temp, int start, int n){
         if(count == n){
             list.add(new ArrayList<>(temp));
         }else{
-            for (int i = m; i < nums.length; i++){
+            for (int i = start; i < nums.length; i++){
                 count++;
                 temp.add(nums[i]);
                 search(list, nums, temp, i+1, n);
