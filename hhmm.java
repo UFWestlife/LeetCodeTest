@@ -92,15 +92,31 @@ public class hhmm {
         }
     }
 
+
+    //Permutation with duplicate strings, requires a sorted input!!!!
+    public static void backPerm1(List<String> list, String temp, String str, boolean[] used){
+        if (temp.length() == str.length()){
+            list.add(temp);
+        }else {
+            for (int i = 0; i < str.length(); i++){
+                if (used[i] || i > 0 && str.charAt(i) == str.charAt(i-1) && !used[i-1]) continue;
+                used[i] = true;
+                temp += String.valueOf(str.charAt(i));
+                backPerm1(list, temp, str, used);
+                used[i] = false;
+                temp = temp.substring(0, temp.length()-1);
+            }
+        }
+    }
+
     public static void main(String args[]){
         System.out.println(solution("12:00"));
 
-        List<List<String>> list = new ArrayList<>();
-        List<String> tempList = new ArrayList<>();
-        boolean[] used = new boolean[4];
-        backPerm(list, tempList, "1", used);
+        List<String> list = new ArrayList<>();
+        String p = "aabc";
+        backPerm1(list, new String(), p, new boolean[p.length()]);
         System.out.println(list);
-
+        if (list.contains("abcb")) System.out.println(111);
 
     }
 }
