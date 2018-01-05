@@ -5,7 +5,7 @@ such that the absolute difference between nums[i] and nums[j]
 is at most t and the absolute difference between i and j is at most k.
  */
 public class ContainsDuplicateIII220 {
-    //Bucket sort   
+    //Bucket sort
     public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if (k < 1 || t < 0) return false;
         Map<Long, Long> map = new HashMap<>();
