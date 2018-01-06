@@ -1,4 +1,4 @@
-package ListNodeProblems;
+package LinkedListProblems;
 
 /**
  * Created by Administrator on 05-Jun-005.

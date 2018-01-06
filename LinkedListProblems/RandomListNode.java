@@ -1,4 +1,4 @@
-package ListNodeProblems;
+package LinkedListProblems;
 
 public class RandomListNode {
 
