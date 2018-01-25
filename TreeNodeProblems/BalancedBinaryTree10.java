@@ -1,4 +1,4 @@
-package BinaryTree;
+package TreeNodeProblems;
 
 public class BalancedBinaryTree10 {
     private static boolean result = true;

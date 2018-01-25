@@ -1,4 +1,4 @@
-package BinaryTree;
+package TreeNodeProblems;
 import java.util.*;
 /**
  * Created by Administrator on 19-May-019.

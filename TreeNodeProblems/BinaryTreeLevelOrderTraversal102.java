@@ -1,4 +1,4 @@
-package BinaryTree;
+package TreeNodeProblems;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

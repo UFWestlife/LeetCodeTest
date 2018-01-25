@@ -1,4 +1,4 @@
-package BinaryTree;
+package TreeNodeProblems;
 
 /**
  * Created by Administrator on 19-May-019.
